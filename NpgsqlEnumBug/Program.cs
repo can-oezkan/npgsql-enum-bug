@@ -33,8 +33,6 @@ internal class AppContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.HasDefaultSchema("app");
-
         modelBuilder.Entity<PersonEntity>(
             entity =>
             {
